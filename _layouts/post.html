@@ -108,6 +108,10 @@
               .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
               .css('opacity', 1-Math.max(top/700, 0));
           });
+          $window.on('scroll', function() {
+              var top = $(this).scrollTop();
+              $('.logo-readium').toggle(top >= coverHeight);
+          });
           $window.trigger('scroll');
 
           $('a[href*=#]:not([href=#])').click(function() {
