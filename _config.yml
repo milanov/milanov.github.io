@@ -41,16 +41,14 @@ social:
   - icon:	github
     url:	https://github.com/milanov
     desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
 
   - icon: linkedin
     url:  https://bg.linkedin.com/in/milanmilanov
     desc: LinkedIn profile
-    share_url:
-    share_title:
-    share_link:
+
+  - icon: stack-overflow
+    url:  http://stackoverflow.com/users/4334499/milan-milanov
+    desc: StackOverlow profile
 
 #  - icon:	google-plus
 #    url:	https://google.com/???
