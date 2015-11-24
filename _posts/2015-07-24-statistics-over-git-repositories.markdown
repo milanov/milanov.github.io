@@ -2,7 +2,7 @@
 layout: post
 title:  "Statistics Over Git Repositories"
 date:   2015-07-24 14:30:00
-tags: version-control git statistics
+tags: version-control git statistics bash scripting
 image: /assets/article_images/2015-07-24-statistics-over-git-repositories/git-log.png
 ---
 

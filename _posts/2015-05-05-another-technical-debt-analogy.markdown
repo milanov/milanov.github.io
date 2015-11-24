@@ -2,7 +2,7 @@
 layout: post
 title:  "Another Technical Debt Analogy"
 date:   2015-05-05 14:30:00
-tags: programming technical-debt metaphor
+tags: programming technical-debt metaphor analogy
 image: /assets/article_images/2015-05-05-another-technical-debt-analogy/files-and-folders.jpg
 ---
 

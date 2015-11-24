@@ -2,7 +2,7 @@
 layout: post
 title:  "Routing Options In Spring MVC"
 date:   2015-10-13 17:30:00
-tags: spring-mvc routing
+tags: spring spring-mvc routing reverse-routing
 image: /assets/article_images/2015-10-13-routing-options-in-spring-mvc/rails-routes.png
 ---
 
