@@ -1,8 +1,7 @@
 # Build settings
-markdown: kramdown
-highlighter: pygments
 gems:
   - jemoji
+  - jekyll-paginate
 
 # Site settings
 title: "Milan Milanov's blog"
