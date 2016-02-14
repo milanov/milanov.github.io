@@ -15,7 +15,7 @@ In order to fully utilize the power of a document-based database like MongoDB, m
 >[The example] illustrates the advantage of embedding over referencing if you need to view many data entities in context of another.
 
 The clichéd scenario that the quote above refers to is an entity which has a collection of other entities somehow linked to it, where usually all that information is fetched together.
-{% highlight js %}
+```
 {
    _id: "joe",
    name: "Joe Bookreader"
@@ -32,7 +32,7 @@ The clichéd scenario that the quote above refers to is an entity which has a co
    street: "1 Some Other Street",
    city: "Boston"
 }
-{% endhighlight %}
+```
 Here lets assume that our application frequently retrieves the address data when retrieving a person, so multiple queries are needed in order to resolve the references. A more **optimal schema** would be to embed the address data entities in the person data, as in the following document:
 {% highlight js %}
 {
