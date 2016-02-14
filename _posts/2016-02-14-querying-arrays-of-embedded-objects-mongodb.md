@@ -70,7 +70,7 @@ the result for Boston's addresses would be a variant of the following document:
 Now that the requirements are cleared up and we know what the expected result is, lets construct the query. For starters we could go back to our simple query, namely `find({'addresses.city': 'Boston'})`. This works as expected (finds both of our person documents), but returns **all array items** in addresses, and not just the ones which match the query. We need a way to further filter these, and since there is not yet a built-in way for that, we could turn to the [Aggregation Framework](https://docs.mongodb.org/manual/core/aggregation-pipeline/){:rel='nofollow' target='_blank'}, available in MongoDB 2.2+. It provides the [$unwind](https://docs.mongodb.org/manual/reference/operator/aggregation/unwind/){:rel='nofollow' target='_blank'} operator can be used to separate our documents array into a stream of documents that can further be operated on. On our dataset, running
 {% highlight js %}
 personsCollection.aggregate({ $unwind : "$addresses" })
- {% endhighlight %}
+{% endhighlight %}
 would result in the following list of documents:
 {% highlight js %}
 {
