@@ -90,8 +90,8 @@ linkTo(methodOn(HelloController.class).hello(word) => "/hello/world"
 
 ### Bonus) Using externalized routing 
 Externalized request mapping is [on its way](https://jira.spring.io/browse/SPR-5757){:rel='nofollow' target='_blank'} in version `5.0` of Spring MVC. Until then a library called \*surprise surprise\* [springmvc-router](http://resthub.org/springmvc-router/){:rel='nofollow' target='_blank'} is available to fill-in the gap. It provides simple mapping between actions and URLs:
-
+{% highlight java %}
     GET     /user/?                 userController.listAll
     GET     /user/{<[0-9]+>id}      userController.showUser
-
+{% endhighlight %}
 Obtaining the URL to an action is done by reverse routing, e.g. `Router.reverse("userController.listAll")`. This shares the same drawbacks like the currently available reverse-routing, but at least probably makes refactoring easier and handles URL priority.
